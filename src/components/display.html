@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input placeholder="wtfff"></input>
+    <div id="pendalun"></div>
+
+
+    <script src="bundle.js"></script>
+    <script>
+       const fs = require('fs');
+const readline = require('readline');
+
+async function processLineByLine() {
+    const fileStream = fs.createReadStream(__dirname+'/output.txt');
+
+    const rl = readline.createInterface({
+        input: fileStream,
+        crlfDelay: Infinity
+    });
+    // Note: we use the crlfDelay option to recognize all instances of CR LF
+    // ('\r\n') in input.txt as a single line break.
+    var b = false, j = 2, str = '',flag=-1
+    for await (const line of rl) {
+        // Each line in input.txt will be successively available here as `line`.
+        if (line === '01313202717' || b) {
+            console.log(line)
+            str += line
+            b = true
+
+
+            if (line.length === 11 || line.length === 23 || line.length === 24) {
+                j--
+                if (j === 0) {
+                    b = false
+                    document.getElementById("pendalund").innerHTML=str;
+                    console.log(str)
+                    return true
+                }
+            }
+        }
+    }
+}
+var r = processLineByLine();
+if(r!=true){
+    document.getElementById("pendalund").innerHTML=str;
+    console.log('not found sorry')
+}
+
+    </script>
+</body>
+
+</html>

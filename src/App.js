@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import './appStyles.css'
-import HookCounter4 from './components/HookCounter4';
-import HookCounter5 from './components/HookCounter5';
+import Pdfread from './components/Pdfread';
 
 function App() {
   return(
     <div className="App">
-    <HookCounter5/>
+    <Pdfread/>
     </div> 
   );
 }
