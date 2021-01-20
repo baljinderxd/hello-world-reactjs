@@ -7,11 +7,15 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.19.2",
+    "chart.js": "^2.9.3",
+    "mongodb": "^3.5.9",
     "pdf2json": "^1.2.0",
     "pdfreader": "^1.0.7",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "table": "^5.4.6",
+    "table-layout": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

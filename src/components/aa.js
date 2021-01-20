@@ -1,0 +1,3 @@
+let one = `https://quickchart.io/chart?c={type:'line',data:{labels:['Sem 1','Sem 2','Sem 3','Sem 4','Sem 5','Sem 6'],datasets:[{label:'SGPA',data:[7.48,7.63,8.36,8.59,8.69,8.85],fill:false,borderColor:'rgb(75, 192, 192)',datalabels: {color: 'black'}},]},options:{plugins:{datalabels: {display: true,anchor: 'end',align: 'start'}},}}`
+
+let two = `https://quickchart.io/chart?c={type:'line',data:{labels:['Sem 1','Sem 2','Sem 3','Sem 4','Sem 5','Sem 6'],datasets:[{label:'SGPA',data:[5.63,6.67,7.61,6.36,7.19,8.54],fill:false,borderColor:'rgb(75, 192, 192)',datalabels: {color: 'black'}},]},options:{plugins:{datalabels: {display: true,anchor: 'end',align: 'start'}},}}`
